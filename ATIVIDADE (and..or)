@@ -1,0 +1,11 @@
+#APOSENTADORIA 
+
+print("Para saber se voce pode se aposentar informe sua idade e tempo de serviço")
+idade = int(input("Digite sua idade:"))
+tempo_de_serviço = int(input("Digite seu tempo de serviço:"))
+
+if idade >= 65 or tempo_de_serviço >= 30 or idade >= 60 and tempo_de_serviço >= 25:
+    print("Voce já pode se aposentar")
+
+else:
+    print("Voce ainda não pode se aposentar")        
