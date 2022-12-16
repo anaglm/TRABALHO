@@ -1,11 +1,13 @@
-#NUMEROS PARES  NUMEROS IMPARES DE 0 A 1000
+# Tabuada de qualquer numero digitado
 
-print("Numeros que sao pares e impares de 0 a 1000")
+print("TABUADA DE QUALQUER NUMERO")
 
-for numero in range(1000):
-    if numero % 2 == 0:
-        print (numero," é par")
-    else:
-        print (numero," é impar")
-        
+numero = int(input("Digite um numero e sua tabuada sera criada:  "))
+
+print ("\n TABUADA DE" , numero, ":")
+
+for y in range(1,11):
+    numero_final = numero * y
+    print(numero, "x" , y , "=", numero_final)
+
 
