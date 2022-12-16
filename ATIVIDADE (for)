@@ -1,0 +1,11 @@
+#NUMEROS PARES  NUMEROS IMPARES DE 0 A 1000
+
+print("Numeros que sao pares e impares de 0 a 1000")
+
+for numero in range(1000):
+    if numero % 2 == 0:
+        print (numero," é par")
+    else:
+        print (numero," é impar")
+        
+
