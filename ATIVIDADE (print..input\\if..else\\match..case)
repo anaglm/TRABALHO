@@ -1,28 +1,28 @@
-#Uso do print e input
+#Uso do input e print
+numero = int(input('Informe um número inteiro qualquer: '))
+print(f'O antecessor do número {numero} é {numero - 1}, e o sucessor é {numero + 1}')
 
-print ("Opções: \n1- x-tudo \n2-pizza \naçai ")
-op = int(input("Escolha seu lanche:"))
-match op:
-    case 1: 
-        quantidade =  int(input ("Quantos x-tudos você quer:"))
-        valor = 13.00
-        valortotal = print("O valor total será:$", quantidade*valor)
-    case 2 : 
-        quantidade =  int(input ("Quantas pizzas você quer:"))
-        valor = 48.00
-        valortotal = print("O valor total será:$", quantidade*valor)
-    case 3:
-        quantidade =  int(input ("Quantos potes de açaí você quer:"))
-        valor = 15.00
-        valortotal = print("O valor total será:$", quantidade*valor)
+-----------------------------------------------------------------------------------------------
 
+#Uso do if, else e elif
+print('====== Turnos escolares ======')
+print('\nM - Matutino')
+print('V - Vespertino')
+print('N - Noturno\n')
 
-#Uso do if e else
-nota = int(input("Digite sua nota:"))
-if nota < 5: 
- print("Você está abaixo da média!")
+turno = input('Em qual turno você estuda? ')
+
+if turno == 'M' or turno == 'm':
+ print('\nBom dia!')
+elif turno == 'V' or turno == 'v':
+ print('\nBoa tarde!')
+elif turno == 'N' or turno == 'n':
+ print('\nBoa noite!')
 else:
-    print("Você está acima da média!")
+ print('\nOpção inválida.')
+input()
+
+------------------------------------------------------------------------------------------------
 
 #Uso do escolha caso
 print ("Opções: \n1- x-tudo \n2-pizza \naçai ")
