@@ -1,11 +1,20 @@
-#APOSENTADORIA 
+ #O codigo le três valores para os lados de um triângulo e veverifica se o triângulo é equilátero (todos lados iguais), isósceles (dois lados iguais) ou 
+#escaleno(todos lados diferentes). 
 
-print("Para saber se voce pode se aposentar informe sua idade e tempo de serviço")
-idade = int(input("Digite sua idade:"))
-tempo_de_serviço = int(input("Digite seu tempo de serviço:"))
+print ("Informe os valores dos lados do triangulo, para que o tipo do triangulo seja informado")
+lado_1 = int(input("Digite o valor do lado do triangulo: "))
+lado_2 = int(input("Digite o valor do lado do triangulo: "))
+lado_3 = int(input("Digite o valor do lado do triangulo: "))
 
-if idade >= 65 or tempo_de_serviço >= 30 or idade >= 60 and tempo_de_serviço >= 25:
-    print("Voce já pode se aposentar")
+if (lado_1 == lado_2) and (lado_2 == lado_3) and (lado_1 == lado_3):
+      print("Esse triangulo é esquilátero")
+
 
 else:
-    print("Voce ainda não pode se aposentar")        
+  if (lado_1 != lado_2) and (lado_2 != lado_3) and (lado_1 != lado_3):
+    print("Esse triangulo é escaleno")
+  
+  else:
+   if(lado_1 == lado_2) or (lado_2 == lado_3) or (lado_1 == lado_3):
+      print("Esse triangulo é isóceles")
+      
